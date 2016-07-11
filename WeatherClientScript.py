@@ -5,10 +5,11 @@ import os
 import IOTAWeatherNode as Node
 
 #Write here the IOTA adress of the Weather Node.
-address="RVORZ9SIIP9RCYMREUIXXVPQIPHVCNPQ9HZWYKFWYWZRE9JQKG9REPKIASHUUECPSQO9JT9XNMVKWYGVA"
+#address="RVORZ9SIIP9RCYMREUIXXVPQIPHVCNPQ9HZWYKFWYWZRE9JQKG9REPKIASHUUECPSQO9JT9XNMVKWYGVA"
+address=input("Address IOTA Node? ")
 
 #Enter here your seed.
-seed=""
+seed=input("Address IOTA Node Seed? ")
 
 promotionText="This is my promotion!"
 commandWeather="{'command':'getWeather'}"
