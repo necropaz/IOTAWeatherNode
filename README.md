@@ -20,9 +20,17 @@ Parameters | Type | Required | Description
 
 ### `readSendersAddress(transaction)`
 
-### `readSendersAddress(transaction)`
+### `getNewTransfer(seed)`
 
 
+### `searchMessage(transaction)`
 
+### `byteToTryte(char)`
+
+### `tryteToByte(char1,char2)`
+
+### `messageEncode(message)`
+
+### `messageDecode(trytes)`
 
 ***
