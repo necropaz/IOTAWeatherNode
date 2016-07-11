@@ -24,54 +24,48 @@ Parameters | Type | Required | Description
 ------------ | ------------- | ------------- | -------------
 `address` | string | Yes | 81-char long address of the recipient of a transaction.
 
-### `searchNewTransaction2(seed)`
-
-Parameters | Type | Required | Description
------------- | ------------- | ------------- | -------------
-`seed` | string | Yes | 81-char encoded string which contains the accounts seed. The seed must be correctly encoded: only uppercase latin letters and 9’s. No other characters are allowed.
-
 ### `readSendersAddress(transaction)`
 
 Parameters | Type | Required | Description
 ------------ | ------------- | ------------- | -------------
-`transaction` | string | Yes | Hash of the transaction which you want to replay.
+`transaction` | string | Yes | Hash of the transaction from which you wanna read the sender address.
 
 ### `getNewTransfer(seed)`
 
 Parameters | Type | Required | Description
 ------------ | ------------- | ------------- | -------------
-`seed` | string | Yes | Hash of the transaction which you want to replay.
+`seed` | string | Yes | 81-char encoded string which contains the accounts seed. The seed must be correctly encoded: only uppercase latin letters and 9’s. No other characters are allowed.
 
 
 ### `searchMessage(transaction)`
 
 Parameters | Type | Required | Description
 ------------ | ------------- | ------------- | -------------
-`transaction` | string | Yes | Hash of the transaction which you want to replay.
+`transaction` | string | Yes | Hash of the transaction which include the message.
 
 ### `byteToTryte(char)`
 
 Parameters | Type | Required | Description
 ------------ | ------------- | ------------- | -------------
-`char` | char | Yes | Hash of the transaction which you want to replay.
+`char` | char | Yes | ASCII Character which will encoded to a Tryte.
 
 ### `tryteToByte(char1,char2)`
 
 Parameters | Type | Required | Description
 ------------ | ------------- | ------------- | -------------
-`char1` | char | Yes | Hash of the transaction which you want to replay.
-`char2` | char | Yes | Hash of the transaction which you want to replay.
+`char1` | char | Yes | First Tryte Character.
+`char2` | char | Yes | Second Tryte Character.
 
 ### `messageEncode(message)`
 
 Parameters | Type | Required | Description
 ------------ | ------------- | ------------- | -------------
-`message` | string | Yes | Hash of the transaction which you want to replay.
+`message` | string | Yes | Message which will be encoded to tyrtes.
 
 ### `messageDecode(trytes)`
 
 Parameters | Type | Required | Description
 ------------ | ------------- | ------------- | -------------
-`trytes` | string | Yes | Hash of the transaction which you want to replay.
+`trytes` | string | Yes | Trytes which will be decoded to ASCII characters.
 
 ***
