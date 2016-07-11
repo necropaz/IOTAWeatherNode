@@ -36,7 +36,7 @@ while True:
 	commandRecived=Node.IOTA.searchMessage(transaction)
 	commandRecived=commandRecived.replace('\'','\"')
 	jsonData=json.loads(commandRecived)
-	if jsonData['command']=="getWeather":
+	if jsonData['command']=="getWeather" :
 		#message=Node.Weather.readWeather()
 		message="{'Temperature':'"+temperature+"', 'Humidity':'"+humidity+"','Pressure':'"+pressure"'}"
 		print("Node.IOTA.sendMessage(self,"+ seed +","+ address+","+ message+", '1'")
