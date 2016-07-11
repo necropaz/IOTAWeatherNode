@@ -1,4 +1,3 @@
-# This Python file uses the following encoding: utf-8
 import sys
 import json
 import time
@@ -6,7 +5,7 @@ import os
 import IOTAWeatherNode as Node
 
 #Here you can enter the simulatet weather Data
-temperature="30"		#Temperature in °C (only for simulation)
+temperature="30"	#Temperature in Celsius (only for simulation)
 humidity="52"		#Humidity in percent (only for simulation)
 pressure="1016"		#Pressure in mbar (only for simulation)
 #uncomment the next line if you wana use a sense HAT
@@ -38,7 +37,7 @@ while True:
 	jsonData=json.loads(commandRecived)
 	if jsonData['command']=="getWeather" :
 		#message=Node.Weather.readWeather()
-		message="{'Temperature':'"+temperature+"', 'Humidity':'"+humidity+"','Pressure':'"+pressure"'}"
+		message="{'Temperature':'"+temperature+"', 'Humidity':'"+humidity+"','Pressure':'"+pressure+"'}"
 		print("Node.IOTA.sendMessage(self,"+ seed +","+ address+","+ message+", '1'")
 		Node.IOTA.sendMessage(seed, address, message, '1')
 		print("Succesfully send request.")
@@ -49,5 +48,5 @@ while True:
 
 	else:
 		print("Can't read sucessfully a command."+jsonData)
-	print("Temperatur: "+jsonData['temperature'+"Humidity: "+jsonData['humidity']+"Pressure: "+jsonData['pressure'])
+	print("Temperatur: "+jsonData['temperature']+"Humidity: "+jsonData['humidity']+"Pressure: "+jsonData['pressure'])
 
