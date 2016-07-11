@@ -1,6 +1,6 @@
 # IOTA Weather Node
 
-## functions
+## Python package functions
 ***
 ### `sendMessage(seed, address, message, value)`
 
@@ -13,4 +13,16 @@ Parameters | Type | Required | Description
 `value` | int | Yes | Hash of the transaction which you want to replay.
 
 ### `sendRequest(command)`
+
+### `searchNewTransaction(address)`
+
+### `searchNewTransaction2(seed)`
+
+### `readSendersAddress(transaction)`
+
+### `readSendersAddress(transaction)`
+
+
+
+
 ***
