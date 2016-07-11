@@ -13,10 +13,10 @@ pressure="1016"		#Pressure in mbar (only for simulation)
 #Node.Weather.initSensHat()
 
 #Write here the IOTA adress of the Weather Node.
-address="RVORZ9SIIP9RCYMREUIXXVPQIPHVCNPQ9HZWYKFWYWZRE9JQKG9REPKIASHUUECPSQO9JT9XNMVKWYGVA"
+address=input("Address IOTA Node? ")
 
-#Enter here the seed which belongs to the IOTA Weather Node Address.
-seed=""
+#Enter here your seed.
+seed=input("Address IOTA Node Seed? ")
 
 
 promotionText="This is my promotion!"
