@@ -68,15 +68,15 @@ Direction |Parameters | Type | Required | Description
 
 ### `messageEncode(message)`
 
-Parameters | Type | Required | Description
------------- | ------------- | ------------- | -------------
+Direction |Parameters | Type | Required | Description
+------------ |------------ | ------------- | ------------- | -------------
 `input` |`message` | string | Yes | Message which will be encoded to tyrtes.
 `return` |`trytes` | string | Yes | The encoded message in trytes
 
 ### `messageDecode(trytes)`
 
-Parameters | Type | Required | Description
------------- | ------------- | ------------- | -------------
+Direction |Parameters | Type | Required | Description
+------------ |------------ | ------------- | ------------- | -------------
 `input` |`trytes` | string | Yes | Trytes which will be decoded to ASCII characters.
 `return` |`message` | string | Yes | The decoded Message.
 
