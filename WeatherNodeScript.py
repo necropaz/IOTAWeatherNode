@@ -1,3 +1,4 @@
+# coding=<encoding name>
 import sys
 import json
 import time
