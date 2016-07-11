@@ -6,9 +6,9 @@ import os
 import IOTAWeatherNode as Node
 
 #Here you can enter the simulatet weather Data
-temperature=30		#Temperature in °C (only for simulation)
-humidity=52		#Humidity in percent (only for simulation)
-pressure=1016		#Pressure in mbar (only for simulation)
+temperature="30"		#Temperature in °C (only for simulation)
+humidity="52"		#Humidity in percent (only for simulation)
+pressure="1016"		#Pressure in mbar (only for simulation)
 #uncomment the next line if you wana use a sense HAT
 #Node.Weather.initSensHat()
 
@@ -38,7 +38,7 @@ while True:
 	jsonData=json.loads(commandRecived)
 	if jsonData['command']=="getWeather":
 		#message=Node.Weather.readWeather()
-		message="{'Temperature':'"+str(temperature)+"', 'Humidity':'"+str(humidity)+"','Pressure':'"+str(pressure)"'}"
+		message="{'Temperature':'"+temperature+"', 'Humidity':'"+humidity+"','Pressure':'"+pressure"'}"
 		print("Node.IOTA.sendMessage(self,"+ seed +","+ address+","+ message+", '1'")
 		Node.IOTA.sendMessage(seed, address, message, '1')
 		print("Succesfully send request.")
