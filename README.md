@@ -1,33 +1,34 @@
 # IOTA Weather Node
-***
+
 The IOTA Weather Node is a Weather Node built with a [Raspberry Pi](https://www.raspberrypi.org/) and the add-on board  [Sense HAT](https://www.raspberrypi.org/products/sense-hat/).
 The Weather Node send and receive Data over the new [IOTA Protocol](https://www.iotatoken.com/).
 
 requirements:
--[ ] [Raspberry Pi](https://www.raspberrypi.org/)
--[ ] microSD card with installed [Ubuntu MATE 16.04 LTS](https://ubuntu-mate.org/download/)
--[ ] Raspberry Pi [Sense HAT](https://www.raspberrypi.org/products/sense-hat/)
--[ ] [IOTA Node](https://github.com/IOTAledger/iota-gui-beta/releases)
+
+- [Raspberry Pi](https://www.raspberrypi.org/)
+- microSD card with installed [Ubuntu MATE 16.04 LTS](https://ubuntu-mate.org/download/)
+- Raspberry Pi [Sense HAT](https://www.raspberrypi.org/products/sense-hat/)
+- [IOTA Node](https://github.com/IOTAledger/iota-gui-beta/releases)
 
 ## IOTA Weather Node
-***
+
 The IOTA Weather Node waiting until a client send a transaction with >0 IOTAs and a message.
 With the message the client tell the node what is his request and an address on which the node can send his answer.
 So can be send a command is arrived over the IOTA Protocol.
 After this he read the Weather info from the Sense HAT and send them back or just show a promotion on his 8x8 LED Matrix.
 
-##
+### Installation:
 
+For a step by step tutorial go to necropaz.github.io (will follow later)
 
-
-
-***
 ## IOTA Weather Client
-***
 
+### Installation:
+
+For a step by step tutorial go to necropaz.github.io (will follow later)
 
 ## Python package functions
-***
+
 ### `sendMessage(seed, address, message, value)`
 
 Send a message to a specified Adress.
@@ -105,5 +106,3 @@ Direction |Parameters | Type | Required | Description
 ------------ |------------ | ------------- | ------------- | -------------
 `input` |`trytes` | string | Yes | Trytes which will be decoded to ASCII characters.
 `return` |`message` | string | Yes | The decoded Message.
-
-***
